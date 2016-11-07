@@ -13,11 +13,12 @@ public class H12O4 extends Applet {
 
     public void init() {
         double gezocht = 400;
-        gevonden = true;
+        gevonden = false;
         int teller = 0;
         while(teller < salaris.length) {
             if(salaris[teller] == gezocht) {
-                gevonden = false;
+                gevonden = true;
+                break;
             }
             teller ++;
         }
